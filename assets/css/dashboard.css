@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+* {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+.navbar {
+  padding: 0.8rem;
+}
+.navbar-brand {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #6648b1 !important;
+}
+.navbar li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
+.card {
+  background: #ffffff none repeat scroll 0 0;
+  margin: 15px 0;
+  padding: 20px;
+  border: 0 solid #484848;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgb(107 107 107 / 23%);
+}
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.media-text-right {
+  text-align: right;
+}
+
+.media-body {
+  vertical-align: middle;
+}
+.media-body p {
+  color: #99abb4;
+  line-height: 15px;
+}
+
+#iarchive {
+  color: yellow;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.radius {
+  border-radius: 4px;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.shadow-container {
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: 0 0 10px #333;
+}
+
+/* for login page */
+.form-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+  width: 50%;
+}
+.form-control {
+  border-radius: 10px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1.5px solid #0779e4;
+}
+input[placeholder] {
+  font-weight: 500;
+}
+/* for form-validation */
+.form-group .success {
+  border-color: #2ecc71;
+}
+
+/* for number fields in forms */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

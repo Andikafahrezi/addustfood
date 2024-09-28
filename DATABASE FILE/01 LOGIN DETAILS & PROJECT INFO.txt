@@ -1,0 +1,9 @@
+**Admin Login Details** 
+
+Username: admin
+Password: admin
+
+**Customer Login Details**
+
+Username: adhita1
+Password: qwerty123
