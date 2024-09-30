@@ -46,8 +46,8 @@
                     <table class="table responsive">
                         <thead class="bg-dark text-white">
                             <tr>
-                                <th>Meja</th>
-                                <th>Menu</th>
+                                <th>Jenis Makanan</th>
+                                <th>Nama Makanan</th>
                                 <th>Quantity</th>
                                 <th>Harga</th>
                             </tr>
@@ -73,7 +73,7 @@
         <footer class="text-center">
             <p class="mb-0">Terima Kasih Atas Pesanan Anda dan Memilih Kami!</p>
             
-            <p>Untuk syarat & ketentuan Silakan kunjungi www.coffeshop.com</p>
+            <p>Untuk syarat & ketentuan Silakan kunjungi www.addustfood.com</p>
         </footer>
     </div>
     <div class="container text-center">

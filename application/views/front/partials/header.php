@@ -28,10 +28,10 @@
             <div class="collapse navbar-collapse" id="navbarRes">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url().'home/index';?>">Beranda</a>
+                        <a class="nav-link" href="<?php echo base_url().'home/index';?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo base_url().'restaurant/index';?>">Katalog Menu</a>
+                        <a class="nav-link active" href="<?php echo base_url().'restaurant/index';?>">Menu</a>
                     </li>
                     <?php $user = $this->session->userdata('user'); 
                     if(empty($user)) {

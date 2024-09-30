@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<body class="hold-transition login-page" style="background:url(<?php echo base_url().'public/front/img/bg.jpg';?>);
+<body class="hold-transition login-page" style="background:url(<?php echo base_url().'public/front/img/bg5.jpg';?>);
 no-repeat center center fixed; background-size: cover;
  -webkit-background-size: cover; 
  -moz-background-size: cover; -o-background-size: cover;">
@@ -29,7 +29,7 @@ no-repeat center center fixed; background-size: cover;
           echo "<div class='alert alert-danger m-3 mx-auto'>".$this->session->flashdata('msg')."</div>";
         }
         ?>
-        <h4 class="pb-4 border-bottom text-center">SILAHKAN LOGIN</h4>
+        <h4 class="pb-4 border-bottom text-center">LOGIN</h4>
         <form action="<?php echo base_url().'login/authenticate' ;?>" name="loginform" id="loginform" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>

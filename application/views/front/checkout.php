@@ -59,9 +59,15 @@
                     <?php echo (form_error('address') != "") ? 'is-invalid' : '';?>"><?php echo set_value('address', $user['address']);?></textarea>
                     <?php echo form_error('address'); ?>
                 </div>
-                <p class="lead mb-0">Cash On Delivery</p>
+                <p class="lead mb-0">Metode Pembayaran</p>
                 <div class="container p-2 mb-3" style="background: #e5e5e5;">
-                    Pay with Cash on Delivery
+                <label for="cars">Pilih Metode Pembayaran :</label>
+                    <select id="cars">
+                        <option value="volvo">Dana</option>
+                        <option value="saab">Ovo</option>
+                        <option value="opel">Shopeepay</option>
+                        <option value="audi">COD</option>
+                    </select>
                 </div>
                 <div>
                     <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
