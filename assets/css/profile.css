@@ -51,16 +51,16 @@ select:focus {
 
 .button {
   background-color: #fff;
-  color: #0779e4;
+  color: #2f8909ce;
 }
 
 .button:hover {
-  background-color: #0779e4;
+  background-color: #f5101bec;
   color: #fff;
 }
 
 .btn-primary {
-  background-color: #0779e4;
+  background-color: #22a815;
 }
 
 .danger {

@@ -33,7 +33,7 @@
                         <td><?php echo $order['quantity']; ?></td>
                         <td><?php echo 'Rp.'.$order['price']; ?></td>
                         <?php if($status=="" or $status=="NULL") { ?>
-                        <td> <button type="button" class="btn btn-secondary" style="font-weight:bold;"><i class="fas fa-bars"></i> Dispatch</button></td>
+                        <td> <button type="button" class="btn btn-secondary" style="font-weight:bold;"><i class="fas fa-bars"></i> Process</button></td>
                         <?php } if($status=="in process") { ?>
                         <td> <button type="button" class="btn btn-warning"><span class="fa fa-cog fa-spin" aria-hidden="true"></span> On Your Way!</button></td>
                         <?php }?>

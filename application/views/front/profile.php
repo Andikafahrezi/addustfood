@@ -100,8 +100,8 @@
                         <?php echo form_error('nRPassword'); ?>
                     </div>
                     <div class="py-3 pb-4 border-bottom">
-                        <button type="submit" class="btn btn-primary mr-3 mb-2">Save Changes</button>
-                        <a href="<?php echo base_url().'home' ?>" class="btn border button">Cancel</a>
+                    <button type="submit" class="btn btn-primary mr-3 mb-2">Save Changes</button>
+                    <a href="<?php echo base_url().'home' ?>" class="btn border button">Cancel</a>
                     </div>
                 </div>
             </form>
