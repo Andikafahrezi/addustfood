@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/bootstrap.min.css';?>">
     <script src="<?php echo base_url().'assets/js/jquery-3.6.0.min.js';?>"></script>
     <script src="<?php echo base_url().'assets/js/bootstrap.min.js';?>"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <script src="https://kit.fontawesome.com/94214cb168.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css'); ?>">
     <style>
     
@@ -20,7 +21,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?php echo base_url().'home/index';?>"><i class="fas fa-utensil-EAT"></i> ADDUST FOOD</a>
+            <a class="navbar-brand" href="<?php echo base_url().'home/index';?>"><i class="fa-solid fa-stroopwafel fa-lg" style="color: #390cc0;"></i> ADDUST FOOD</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes">
                 <span class="navbar-toggler-icon"></span>
             </button>

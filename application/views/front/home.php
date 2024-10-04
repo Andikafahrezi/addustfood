@@ -49,17 +49,17 @@
 <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-utensils"></i>
-            <h3>Pilih Jenis Makakanan</h3>
+           <i class="fa-solid fa-bowl-food fa-5x" style="color: #0849ba;"></i>        
+          <h3>Pilih Jenis Makakanan</h3>
             <p>Hal pertama yang dapat Anda lakukan adalah memilih jenis makanan kesukaan anda!</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-bullseye"></i>
+        <i class="fa-solid fa-bullseye fa-5x" style="color: #165cd4;"></i>
             <h3>Pilih makanan favorit</h3>
             <p>Kami membantu Anda dengan menu dari berbagai jenis makanan!</p>
         </div>
         <div class="col-sm-12 col-md-4">
-        <i class="fas fa-clipboard-check"></i>
+        <i class="fa-solid fa-truck fa-5x" style="color: #0c56d4;"></i>
             <h3>Penjemputan atau Pengiriman</h3>
             <p>Bagaimanapun, makanan akan dikirim atau Anda dapat mengambilnya sesuai pilihan Anda!</p>
         </div>
