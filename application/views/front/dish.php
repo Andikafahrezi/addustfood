@@ -12,7 +12,7 @@
                 <h4 class="card-title font-weight-bold text-primary"><?php echo $res['name']; ?></h4>
                 <p class="card-text lead"><?php echo $res['address']; ?></p>
                 <p class="card-text">
-                Hidangan di buat oleh koki yang berpengalaman
+                Makanan dibuat Oleh Para Dewa yang Berpengalaman
                 </p>
             </div>
         </div>

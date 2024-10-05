@@ -6,7 +6,7 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="<?php echo base_url().'public/front/img/header1.jpg';?>" alt="FriesBrgrImg">
+            <img src="<?php echo base_url().'public/front/img/rak.jpg';?>" alt="FriesBrgrImg">
             <div class="carousel-caption text-left">
                 <h1 class="display-2">> Anda ingin makanan sedap?</h1>
                 <h3>kami di sini untuk melayani Anda</h3>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="<?php echo base_url().'public/front/img/cafe.jpg';?>" alt="Spaghetti">
+            <img src="<?php echo base_url().'public/front/img/rak2.jpg';?>" alt="Spaghetti">
             <div class="carousel-caption text-right">
                 <h1 class="display-2">> Anda ingin makanan sedap?</h1>
                 <h3>kami di sini untuk melayani Anda</h3>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="<?php echo base_url().'public/front/img/bfbrg.jpg';?>" alt="corn">
+            <img src="<?php echo base_url().'public/front/img/rak3.jpg';?>" alt="corn">
             <div class="carousel-caption text-right">
                 <h1 class="display-2">> Anda ingin makanan sedap?</h1>
                 <h3>kami di sini untuk melayani Anda</h3>
@@ -80,17 +80,15 @@
         <?php foreach($dishesh as $dish) { ?>
         <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
             <div class="card mb-4 shadow-sm">
-                <?php $image = $dish['img'];?>
-                <img class="card-img-top" src="<?php echo base_url().'public/uploads/dishesh/thumb/'.$image; ?>">
+                <?php $image = $dish['image'];?>
+                <img class="card-img-top" src="<?php echo base_url().'public/uploads/dishesh/display/'.$image; ?>">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="card-title"><?php echo $dish['name']; ?></h4>
                         <h4 class="text-muted"><b>Rp.<?php echo $dish['price']; ?></b></h4>
                     </div>
                     <p class="card-text"><?php echo $dish['about']; ?></p>
-                    <a href="<?php echo base_url().'Dish/addToCart/'.$dish['d_id']; ?>" class="btn btn-primary"><i
-                            class="fas fa-cart-plus"></i> Tambahkan ke
-                        Cart</a>
+                    
                 </div>
             </div>
         </div>

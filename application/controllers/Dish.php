@@ -37,4 +37,17 @@ class Dish extends CI_Controller {
         $this->cart->insert($data);
         redirect(base_url(). 'cart/index');
     }
+    public function addToCartt($id) {
+        $this->load->model('Menu_model');
+        $display = $this->Menu_model->getSingleDish($id);
+        $data = array (
+            'id'    => $display['di_id'],
+            'qty'   =>1,
+            'price' => $display['price'],
+            'name' => $display['name'],
+            'image' => $display['image']
+        );
+        $this->cart->insert($data);
+        redirect(base_url(). 'cart/index');
+    }
 }
