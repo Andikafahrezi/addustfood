@@ -124,7 +124,7 @@
     </div>
     <?php endif ?>
     <h2 class="text-center my-2 font-weight-bold">Kontak Kami</h2>
-    <p class="text-center">Selalu Di Sini Untuk Anda</p>
+    <p class="text-center">Selalu bersama anda</p>
     <!--Section description-->
     <p class="text-center mx-auto mb-5"></p>
     <form name="contact-form" action="<?php echo base_url().'home/sendMail'; ?>" id="myForm" method="POST">

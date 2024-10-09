@@ -1,7 +1,7 @@
 <div class="container p-4">
     <div class="row welcome text-center welcome">
         <div class="col-12">
-            <h1 class="display-4">Menu of <?php echo $res['name']; ?></h1>
+            <h1 class="display-4"> <?php echo $res['name']; ?></h1>
         </div>
     </div>
     <div class="container res-card">

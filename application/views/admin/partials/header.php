@@ -17,7 +17,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?php echo base_url().'admin/home';?>">Admin Panel</a>
+            <a class="navbar-brand" href="<?php echo base_url().'admin/home';?>">Dashboard Admin</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,9 +41,9 @@
                             Store
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?php echo base_url().'admin/store/';?>">Kelola Toko</a>
+                            <a class="dropdown-item" href="<?php echo base_url().'admin/store/';?>">Kelola Jenis Makanan</a>
                             <a class="dropdown-item"
-                                href="<?php echo base_url().'admin/store/create_restaurant';?>">Buat Toko</a>
+                                href="<?php echo base_url().'admin/store/create_restaurant';?>">Buat Jenis Makanan</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown active">
@@ -52,7 +52,7 @@
                             Category
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?php echo base_url().'admin/category/';?>">Buat
+                            <a class="dropdown-item" href="<?php echo base_url().'admin/category/';?>">Kelola
                                 Categories</a>
                             <a class="dropdown-item"
                                 href="<?php echo base_url().'admin/category/create_category';?>">Buat

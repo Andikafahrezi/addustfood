@@ -114,7 +114,7 @@
         <div class="col-md-6 mt-3">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Laporan Reservasi Meja</h2>
+                    <h2>Laporan Pemesanan Jenis Makanan</h2>
                 </div>
                 <div class="col-md-12">
                     <table class="table table-striped table-responsive table-hover">
@@ -151,7 +151,7 @@
         <div class="col-md-6 mt-3">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Laporan Menu</h2>
+                    <h2>Laporan Penjualann Menu</h2>
                 </div>
                 <div class="col-md-12">
                     <table class="table table-striped table-responsive table-hover">

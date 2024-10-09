@@ -15,8 +15,8 @@
 <body>
 
     <div class="conatiner">
-        <h1 class="text-center mt-3">HALAMAN ADMINISTRATOR</h1>
-        <p class="text-center mb-4">==SILAHKAN LOGIN==</p>
+        <h1 class="text-center mt-3">LOGIN ADMINISTRATOR</h1>
+        <p class="text-center mb-4"></p>
         <?php
         if (!empty($this->session->flashdata('msg'))) {
           echo "<div class='alert alert-danger mb-3 mx-auto' style='width:50%'>".$this->session->flashdata('msg')."</div>";
@@ -25,7 +25,7 @@
         <form action="<?php echo base_url().'admin/login/authenticate' ;?>" name="loginform" id="loginform"
             method="POST" class="form-container mx-auto">
             <div class="form-group">
-                <label for="username">Enter Username</label>
+                <label for="username">Username</label>
                 <input type="text" class="form-control my-2" name="username" id="username" placeholder="Username">
                 <span></span>
             </div>
