@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2024 at 08:26 AM
+-- Generation Time: Oct 12, 2024 at 02:00 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -40,7 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `username`, `password`, `email`, `date`) VALUES
-(1, 'admin', '$2y$10$mI/hpZ59vGgjs/lPTQWLJu.I82O93AEJ3gwFycAjuibOjAGi9dcTm', 'admin123@gmail.com', '2021-02-26 16:24:50');
+(1, 'admin', '$2y$10$mI/hpZ59vGgjs/lPTQWLJu.I82O93AEJ3gwFycAjuibOjAGi9dcTm', 'admin123@gmail.com', '2021-02-26 16:24:50'),
+(2, 'dika', '$2y$19$/6bQxltF3Xf8C0sgIzlFau38BLk83lTJNJPtycGOIi08YmZ8tbEh.', 'dika@gmail.com', '2024-10-03 11:17:44');
 
 -- --------------------------------------------------------
 
@@ -62,21 +63,57 @@ CREATE TABLE `dishesh` (
 --
 
 INSERT INTO `dishesh` (`d_id`, `r_id`, `name`, `about`, `price`, `img`) VALUES
-(2, 4, 'Turkey Fajitas', 'Nikmati makanan Meksiko yang lezat dengan resep fajitas kalkun BBQ berasap dari Giulia Restro ini untuk menghabiskan sisa makanan kalkun atau hanya untuk membuat makan malam yang lezat! Berikan saja tendangan dengan saus Picante, paprika dan bawang, semua', 90000, 'turky.jfif'),
-(3, 1, 'Hot Dog', 'Sosis utuh yang diawetkan dan dimasak tanpa kulit atau dimasukkan ke dalam casing, yang mungkin dikenal sebagai frankfurter, frank, furter, wiener, red hot, vienna, bologna, garlic bologna, atau knockwurst, dan yang dapat disajikan dalam roti atau roti gu', 450000, 'hotdog.jfif'),
-(4, 1, 'Ham Burger', 'Sandwich yang terdiri dari satu atau lebih roti daging giling yang dimasak, biasanya daging sapi, ditempatkan di dalam irisan roti gulung atau roti. Patty dapat digoreng, dipanggang, diasap atau dipanggang dengan api. Epic Ham and Cheese Stuffed Bacon Bur', 500000, 'ham.jfif'),
-(5, 2, 'Detroit-Style Pizza', 'Pizza tebal berpotongan persegi dengan lapisan bawah kerak yang renyah dan digoreng dipenuhi dengan keju leleh yang lezat. Hasil dari gaya pizza yang unik ini adalah bagian tengah yang lengket dan adonan dengan kerak luar yang renyah dan keju karamel yang', 500000, 'pizza.jfif'),
-(6, 1, 'Pasta allArrabbiata', 'Pasta Arrabiata secara harfiah berarti \"pasta marah\" dalam bahasa Italia. Saus arrabiata (sugo all\'arrabbiata) adalah saus tomat pedas (marah) yang dibuat dengan banyak minyak zaitun, bawang putih, tomat cincang, dan serpihan paprika merah untuk memberika', 90000, 'pasta.jfif'),
-(7, 2, 'Spaghetti Carbonara', 'Hanya spageti dan carbonara dibuat dengan pancetta atau bacon, telur, Parmesan, sedikit minyak zaitun, garam dan merica. Saus carbonara sutra dibuat ketika telur kocok dilemparkan dengan pasta panas dan sedikit lemak dari pancetta atau bacon.', 90000, 'spagetti.jfif'),
-(11, 3, 'Bakso', 'Bakso adalah makanan yang di gemari oleh lintas usia, karena memiliki cita rasa yang gurih', 20000, 'Bakso.jpeg'),
-(12, 3, 'Mie Ayam', 'Mie Ayam yang memiliki cita rasa yang gurih dan manis', 35000, 'Mie Ayam.jpeg'),
-(24, 1, 'Nasi Goreng', 'Nasi Goreng adalah makanan khas indonesia yang memiliki cita rasa yang khas ', 40000, 'nasigore.jpg'),
-(25, 2, 'Americano', 'Ice or Hot Americano Coffe', 15000, 'americano.jpg'),
-(26, 1, 'Latte', 'Coffe Latte', 25000, 'latte.jpg'),
-(27, 3, 'Matcha', 'Matcha Latte', 25000, 'matcha.jpg'),
-(28, 4, 'Orange Juice', 'Ice or Hot Orange Juice', 20000, 'jeruk.jpg'),
-(29, 3, 'Lemon Tea', 'Ice or Hot Lemon Tea', 20000, 'lemontea.jpeg'),
-(30, 2, 'Ice Tea', 'Ice or Hot Tea', 22000, 'esteh.jpeg');
+(1, 3, 'Kuesoes', 'enak', 50000, 'suscoklat.jpeg'),
+(2, 1, 'Kue Soes ', 'Kue Soes coklat yang enak dan bergizi', 50000, 'suscoklat.jpeg'),
+(3, 3, 'Kue Nastar', 'enak', 50000, 'nastar.jpeg'),
+(4, 2, 'Bolu Kukus', 'Bolu kukus Gula merah yang menjadikanya enak mantap', 5000, 'bolukukus.jpeg'),
+(5, 2, 'Kue Lapis', 'Kue Lapis yang enak dan mantap', 5000, 'kuelapis.jpg'),
+(6, 2, 'Kue Dadar Gulung', 'Kue Dadar Gulung yang enak dan mantap', 5000, 'kuedadargulung.jpg'),
+(7, 2, 'Kue Cucur', 'Kue Cucur yang enak dan mantap', 5000, 'Kuecucur.jpeg'),
+(8, 2, 'Martabak', 'Martabak yang enak dan mantap', 5000, 'Martabak.jpeg'),
+(9, 4, 'Gudeg Jogja', 'Gudeg Jogja yang enak dan mantap', 15000, 'gudeg.jpg'),
+(10, 4, 'Rendang Sapi', 'Rendang Sapi yang enak dan mantap', 15000, 'rendang.jpg'),
+(11, 4, 'Ayam rica-rica', 'Ayam rica-rica Khas Manado yang enak dan mantap', 15000, 'Ayamricarica.jpeg'),
+(12, 4, 'Rawon Jawa Timur', 'Rawon Khas Jawa Timur yang enak dan mantap', 15000, 'RawonJawaTimur.jpeg'),
+(13, 4, 'Ayam Betutu', 'Ayam Betutu yang enak dan mantap', 15000, 'AyamBetutu.jpeg'),
+(14, 4, 'Sate Ayam', 'Sate Ayam yang enak dan mantap', 15000, 'sateayam.jpg'),
+(15, 4, 'Gurame Bakar', 'Gurame Bakar yang enak dan mantap', 15000, 'Guramebakar.jpeg'),
+(16, 4, 'Nasi Goreng', 'Nasi Goreng yang enak dan mantap', 15000, 'nasigor.jpg'),
+(17, 4, 'Steak', 'Steak daging sapi yang enak dan mantap', 15000, 'stkkk.jpg'),
+(18, 3, 'Onde-Onde', 'Onde-Onde yang sangat enak dan mantap', 5000, 'Onde-Onde.jpeg'),
+(19, 3, 'Lanting', 'Lanting yang sangat enak dan mantap', 5000, 'lanting.jpg'),
+(20, 3, 'Keripik Pisang', 'Keripik Pisang yang sangat enak dan mantap', 5000, 'keripikpisang.jpeg'),
+(21, 3, 'Keripik Tempe', 'Keripik Tempe yang gurih dan enak', 5000, 'keripiktempe.jpg'),
+(22, 3, 'Kentang Goreng', 'Kentang Goreng yang gurih dan enak', 15000, 'ffries.jpg'),
+(23, 3, 'Bakso', 'Bakso yang gurih dan enak', 15000, 'bakso.jpg'),
+(24, 1, 'Putri Salju', 'Putri Salju yang enak dan bergizi', 50000, 'putrisalju.jpeg'),
+(25, 1, 'Nastar', 'Nastar yang enak dan bergizi', 50000, 'Nastar.jpeg'),
+(26, 1, 'Lidah Kucing', 'Lidah Kucing yang enak dan bergizi', 50000, 'lidahkucing.jpeg'),
+(27, 1, 'Kastaangle', 'Kastaangle yang enak dan bergizi', 50000, 'kastangle.jpeg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `display`
+--
+
+CREATE TABLE `display` (
+  `di_id` int(11) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `price` int(11) NOT NULL,
+  `about` varchar(200) NOT NULL,
+  `image` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `display`
+--
+
+INSERT INTO `display` (`di_id`, `name`, `price`, `about`, `image`) VALUES
+(1, 'soescoklat', 50000, 'enak mantap', 'suscoklat.jpeg'),
+(2, 'Kentang Goreng', 25000, 'Wenak', 'ffries.jpg'),
+(3, 'Nasi Goreng', 25000, 'Wenak', 'nasigor.jpg'),
+(4, 'Mie Ayam', 25000, 'Wenak', 'Mieayam.jpeg');
 
 -- --------------------------------------------------------
 
@@ -103,10 +140,10 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`r_id`, `c_id`, `name`, `email`, `phone`, `url`, `o_hr`, `c_hr`, `o_days`, `address`, `img`) VALUES
-(1, 9, 'Reguler', 'kelompok@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '10pm', 'mon-sat', 'Free Wifi', 'cafe2.jpg'),
-(2, 8, 'VIP', 'kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'AC, Free Wifi and free desert', 'cafe.jpg'),
-(3, 8, 'Outdoor', 'kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'FREE WIFI,smoking area', 'Outdoor.jpg'),
-(4, 8, 'Rooftop', 'Kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'FREE WIFI, smoking area', 'rooftop.jpeg');
+(1, 5, 'Kue Kering', 'kelompok6@gmail.com', '0876876876876', 'www.addustcorp.site', '8am', '7pm', 'mon-sat', 'Menyediakan Kue Kering untuk kita semua', 'kering.jpeg'),
+(2, 8, 'Kue Basah', 'kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'Menyediakan Kue Basah untuk kita semua', 'basah.jpg'),
+(3, 9, 'Makanan Ringan', 'kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'Menyediakan Makanan Ringan untuk kita semua', 'displayringan.jpg'),
+(4, 9, 'Makanan Berat', 'Kelompok2@gmail.com', '0876876876876', 'www.tkfajarnusantara.site', '8am', '8pm', 'mon-sat', 'Menyediakan Makanan Berat untuk kita semua', 'berat.png');
 
 -- --------------------------------------------------------
 
@@ -124,8 +161,10 @@ CREATE TABLE `res_category` (
 --
 
 INSERT INTO `res_category` (`c_id`, `c_name`) VALUES
-(8, 'UMUM'),
-(9, 'V I P');
+(5, 'kering'),
+(8, 'Basah'),
+(9, 'Ringan'),
+(10, 'Berat');
 
 -- --------------------------------------------------------
 
@@ -156,7 +195,8 @@ INSERT INTO `users` (`u_id`, `username`, `f_name`, `l_name`, `email`, `phone`, `
 (35, 'dila69', 'adhila', 'putri', 'adhil@gmail.com', '0822449879', '$2y$10$h7VfLBNtTSQbIZb89U0.8eBtIwdrOiDZdYRgqNom41kuQp70oi1ny', 'jember'),
 (36, 'adhita1', 'adhita', 'putri', 'adhita@gmail.com', '0824567898', '$2y$10$nhz2PKMPJuN/I.Bvz778x.lYrz8z6En2vo2DkzIHyXi1UUtj..j9O', 'lumajang'),
 (37, 'tgegs', 'qwrw', 'wew', 'a@gmail.com', '0822449879', '$2y$10$N4N5nGJAzpysqePbDC3K4OWYAyklXqWMtcgQJPer3DcTOqXXcjBVa', 'eewffw'),
-(38, 'akram', 'akram', 'akram', 'akram@gmail.com', '0880918292', '$2y$10$otSuFbputYVR.Ter.dY1m.zcNlCXeKMuc7Bcxxmoba9zFdx/ZbJPe', 'a');
+(38, 'akram', 'akram', 'akram', 'akram@gmail.com', '0880918292', '$2y$10$otSuFbputYVR.Ter.dY1m.zcNlCXeKMuc7Bcxxmoba9zFdx/ZbJPe', 'a'),
+(39, 'aaaaa', 'aaaa', 'aaaa', 'a@gmail.com', '0211100324', '$2y$10$48yvQ2vJgWcICXoWNuQawOYAsH0EVd8tQf.gfPZMydmCCRuhUdBIC', 'dqdwdqq');
 
 -- --------------------------------------------------------
 
@@ -182,21 +222,22 @@ CREATE TABLE `user_orders` (
 --
 
 INSERT INTO `user_orders` (`o_id`, `u_id`, `d_id`, `d_name`, `quantity`, `price`, `status`, `date`, `success-date`, `r_id`) VALUES
-(18, 18, 9, 'Maltesers Tiramisu', 1, 4, 'closed', '2021-05-16 18:01:05', '2021-05-16 16:02:09', 3),
-(20, 19, 10, 'Arancini', 1, 12, NULL, '2021-05-17 12:01:04', '2021-05-17 06:16:04', 6),
-(21, 21, 18, 'Chimichanga', 1, 9, 'in process', '2021-05-17 13:38:29', '2021-05-17 12:21:29', 2),
-(22, 23, 16, 'Sesame Chicken', 3, 33, 'closed', '2021-05-17 14:19:58', '2021-05-17 12:30:47', 4),
-(23, 24, 1, 'Grilled Cheese Sandwich', 2, 12, 'closed', '2021-05-17 14:30:02', '2024-06-20 13:32:59', 1),
-(24, 24, 20, 'Chop Suey', 1, 8, 'closed', '2021-05-17 14:30:02', '2021-05-17 14:32:49', 2),
-(25, 31, 7, 'Spaghetti Carbonara', 1, 9, NULL, '2021-05-17 14:38:44', '2021-05-17 08:53:44', 1),
-(27, 32, 21, 'PoBoy', 2, 10, 'in process', '2021-05-17 15:55:55', '2021-05-17 13:57:23', 5),
-(28, 34, 8, 'Toasted Ravioli', 4, 44, 'rejected', '2021-05-17 16:22:34', '2021-05-17 14:31:36', 2),
 (34, 36, 12, 'Mie Ayam', 1, 15000, 'closed', '2023-03-12 17:35:42', '2023-03-12 16:38:31', 2),
-(35, 36, 25, 'Es jeruk lemon asli', 1, 15000, 'closed', '2023-03-12 17:35:42', '2023-03-12 16:38:25', 2),
-(36, 37, 3, 'Hot Dog', 1, 450000, 'rejected', '2024-06-19 14:59:14', '2024-06-20 13:33:26', 1),
 (39, 38, 24, 'Nasi Goreng', 1, 40000, 'rejected', '2024-06-20 12:21:55', '2024-06-20 13:33:50', 2),
-(40, 38, 4, 'Ham Burger', 1, 500000, 'closed', '2024-06-20 15:31:37', '2024-06-20 13:33:47', 1),
-(41, 38, 28, 'Orange Juice', 1, 20000, 'rejected', '2024-06-20 15:31:37', '2024-06-20 13:33:40', 4);
+(58, 39, 1, 'Kuesoes', 1, 50000, 'closed', '2024-10-05 09:12:21', '2024-10-05 07:13:16', 3),
+(59, 39, 2, 'bakso', 1, 50000, 'closed', '2024-10-05 09:19:23', '2024-10-05 07:19:36', 1),
+(60, 39, 2, 'bakso', 1, 50000, 'closed', '2024-10-05 12:07:50', '2024-10-05 10:16:20', 1),
+(61, 39, 3, 'Kue Nastar', 2, 100000, 'closed', '2024-10-05 12:15:59', '2024-10-05 10:16:15', 3),
+(62, 39, 2, 'bakso', 1, 50000, 'closed', '2024-10-05 12:15:59', '2024-10-05 10:16:10', 1),
+(63, 39, 5, 'Kue Lapis', 1, 5000, 'closed', '2024-10-06 17:19:14', '2024-10-06 15:19:36', 2),
+(64, 39, 2, 'bakso', 1, 50000, 'closed', '2024-10-06 17:19:14', '2024-10-06 15:19:32', 1),
+(65, 39, 22, 'Kentang Goreng', 1, 15000, 'closed', '2024-10-06 17:19:14', '2024-10-06 15:19:24', 3),
+(66, 39, 16, 'Nasi Goreng', 1, 15000, 'closed', '2024-10-06 17:19:14', '2024-10-06 15:19:21', 4),
+(67, 39, 2, 'Kue Soes ', 1, 50000, 'closed', '2024-10-06 17:34:04', '2024-10-06 15:34:20', 1),
+(68, 39, 27, 'Kastaangle', 1, 50000, 'closed', '2024-10-06 17:34:04', '2024-10-06 15:34:12', 1),
+(69, 39, 11, 'Ayam rica-rica', 1, 15000, 'closed', '2024-10-09 03:04:37', '2024-10-09 01:05:00', 4),
+(70, 39, 6, 'Kue Dadar Gulung', 1, 5000, 'closed', '2024-10-09 03:04:37', '2024-10-09 01:04:53', 2),
+(71, 39, 9, 'Gudeg Jogja', 2, 30000, 'closed', '2024-10-11 15:38:35', '2024-10-11 13:39:31', 4);
 
 --
 -- Indexes for dumped tables
@@ -213,6 +254,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `dishesh`
   ADD PRIMARY KEY (`d_id`);
+
+--
+-- Indexes for table `display`
+--
+ALTER TABLE `display`
+  ADD PRIMARY KEY (`di_id`);
 
 --
 -- Indexes for table `restaurants`
@@ -246,13 +293,13 @@ ALTER TABLE `user_orders`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `dishesh`
 --
 ALTER TABLE `dishesh`
-  MODIFY `d_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `d_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `restaurants`
@@ -264,19 +311,19 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `res_category`
 --
 ALTER TABLE `res_category`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `user_orders`
 --
 ALTER TABLE `user_orders`
-  MODIFY `o_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `o_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
