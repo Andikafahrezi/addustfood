@@ -5,5 +5,5 @@ Password: admin
 
 **Customer Login Details**
 
-Username: adhita1
-Password: qwerty123
+Username: aaaaa
+Password: 12345678
