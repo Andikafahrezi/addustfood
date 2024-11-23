@@ -9,13 +9,14 @@ class Dish extends CI_Controller {
         $this->load->library('cart');
     }
 
+
     public function list($id) {
         $this->load->model('Menu_model');
         $dishesh = $this->Menu_model->getDishesh($id);
 
         $this->load->model('Store_model');
         $res = $this->Store_model->getStore($id);
-
+        
         $data['dishesh'] = $dishesh;
         $data['res'] = $res;
         $this->load->view('front/partials/header');
@@ -36,6 +37,19 @@ class Dish extends CI_Controller {
         );
         $this->cart->insert($data);
         redirect(base_url(). 'cart/index');
+    }
+    public function dish($id) {
+        $this->load->model('Menu_model');
+        $dishesh = $this->Menu_model->getSingleDish($id);
+        $data = array (
+            'id'    => $dishesh['d_id'],
+            'r_id'  => $dishesh['r_id'],
+            'qty'   =>1,
+            'price' => $dishesh['price'],
+            'name' => $dishesh['name'],
+            'image' => $dishesh['img']
+        );
+        $this->cart->insert($data);
     }
     public function addToCartt($id) {
         $this->load->model('Menu_model');

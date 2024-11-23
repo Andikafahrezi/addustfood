@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<body class="hold-transition login-page" style="background:url(<?php echo base_url().'public/front/img/bg.jpg';?>);
+<body class="hold-transition login-page" style="background:url(<?php echo base_url().'public/front/img/reg1.jpeg';?>);
 no-repeat center center fixed; background-size: cover;
  -webkit-background-size: cover; 
  -moz-background-size: cover; -o-background-size: cover;">

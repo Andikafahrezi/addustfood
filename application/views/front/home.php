@@ -6,10 +6,10 @@
     </ul>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="<?php echo base_url().'public/front/img/rak.jpg';?>" alt="FriesBrgrImg">
+            <img src="<?php echo base_url().'public/front/img/home.jpeg';?>" alt="FriesBrgrImg">
             <div class="carousel-caption text-left">
-                <h1 class="display-2">> Anda ingin makanan sedap?</h1>
-                <h3>kami di sini untuk melayani Anda</h3>
+                <h1 class="display-2">> Lengkap untuk setiap selera!</h1>
+                <h3>addustfood siap melayanimu!</h3>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
@@ -17,8 +17,8 @@
         <div class="carousel-item">
             <img src="<?php echo base_url().'public/front/img/rak2.jpg';?>" alt="Spaghetti">
             <div class="carousel-caption text-right">
-                <h1 class="display-2">> Anda ingin makanan sedap?</h1>
-                <h3>kami di sini untuk melayani Anda</h3>
+                <h1 class="display-2">> Satu tempat dengan berbagai macam rasa!</h1>
+                <h3>addustfood siap melayanimu</h3>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
@@ -26,8 +26,8 @@
         <div class="carousel-item">
             <img src="<?php echo base_url().'public/front/img/rak3.jpg';?>" alt="corn">
             <div class="carousel-caption text-right">
-                <h1 class="display-2">> Anda ingin makanan sedap?</h1>
-                <h3>kami di sini untuk melayani Anda</h3>
+            <h1 class="display-2">> Addustfood Siap Meladeni Ke BM-an Mu!</h1>
+            <h3>Tunggu apa lagi? Pesan sekarang!</h3>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
                 <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
@@ -41,8 +41,8 @@
         </div>
         <hr>
         <div class="col-12">
-            <p class="lead">Cara termudah untuk membeli makanan kesukaan Anda. Sistem Pemesanan Makanan menyediakan pengiriman segar
-                dan sedap!. Jadi jangan menunggu dan mulai memesan sekarang juga!</p>
+            <p class="lead">Basah, Kering, Ringan dan berat. Semua ada ditempat ini, Cara termudah untuk membeli makanan kesukaan Anda. Sistem Pemesanan Makanan menyediakan pengiriman segar
+                dan sedap!.  Jadi jangan menunggu dan mulai memesan sekarang juga!</p>
         </div>
     </div>
 </div>
@@ -69,7 +69,7 @@
 <div class="container-fluid padding">
     <div class="row welcome text-center welcome">
         <div class="col-12">
-            <h1 class="display-4">Makanan Populer</h1>
+            <h1 class="display-4">Makanan Favorite</h1>
         </div>
         <hr>
     </div>

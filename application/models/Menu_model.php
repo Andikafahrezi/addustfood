@@ -8,6 +8,10 @@ class Menu_model extends CI_Model {
     }
 
     public function getMenu() {
+        $result = $this->db->get('dishesh')->result_array();
+        return $result;
+    }
+    public function getMenuu() {
         $result = $this->db->get('display')->result_array();
         return $result;
     }
