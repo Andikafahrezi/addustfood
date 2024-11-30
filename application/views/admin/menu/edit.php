@@ -3,10 +3,10 @@
         class="form-container mx-auto  shadow-container" style="width:80%" enctype="multipart/form-data">
         <h3 class="mb-3 text-center">Edit Menu "<?php echo $dish['name']; ?>"</h3>
         <div class="form-group">
-            <label class="control-label">Pilih Meja Reservasi</label>
+            <label class="control-label">Pilih Jenis Makanan</label>
             <select name="rname" id="resname"
                 class="form-control <?php echo (form_error('rname') != "") ? 'is-invalid' : '';?>">
-                <option>--Select Meja Reservasi--</option>
+                <option>--Select Jenis Makanan--</option>
                 <?php 
                 if (!empty($stores)) { 
                     foreach($stores as $store) {

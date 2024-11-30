@@ -1,5 +1,5 @@
 <div class="container shadow-container">
-    <h2 class="p-2 text-center">Edit Jenis Category "<?php echo $cat['c_name'];?>"</h2>
+    <h2 class="p-2 text-center">Edit Category Jenis "<?php echo $cat['c_name'];?>"</h2>
     <form action="<?php echo base_url().'admin/category/edit/'.$cat['c_id'];?>" class="container" method="POST" id="myForm">
         <div class="form-group">
             <label for="category">Category</label>

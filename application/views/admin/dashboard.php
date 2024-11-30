@@ -22,7 +22,7 @@
                     </div>
                     <div class="media-body media-text-right">
                         <h2><?php echo $countStore; ?></h2>
-                        <p class="m-b-0">Meja/s</p>
+                        <p class="m-b-0">Jenis Makanan</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Nama meja</th>
+                                <th>Nama Jenis Makanan</th>
                                 <th>Total Sales</th>
                             </tr>
                         </thead>

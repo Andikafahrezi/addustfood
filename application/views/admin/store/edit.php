@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label class="control-label">Restaurant Name</label>
+                    <label class="control-label">Jenis Makanan</label>
                     <input type="text" name="res_name"  class="form-control
                     <?php echo (form_error('res_name') != "") ? 'is-invalid' : '';?>" placeholder="Add restaurant name"
                         value="<?php echo set_value('res_name', $store['name']);?>">
