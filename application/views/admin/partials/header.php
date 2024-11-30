@@ -68,6 +68,9 @@
                             <a class="dropdown-item" href="<?php echo base_url().'admin/menu/';?>">Kelola Menu</a>
                             <a class="dropdown-item" href="<?php echo base_url().'admin/menu/create_menu';?>">Buat
                                 Menu</a>
+                            <a class="dropdown-item" href="<?php echo base_url().'admin/menu/indexd';?>">Kelola Menu Populer</a>
+                            <a class="dropdown-item" href="<?php echo base_url().'admin/menu/create_menud';?>">Buat
+                                Menu Populer</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown active">
