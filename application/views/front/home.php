@@ -107,11 +107,11 @@
             <h2>Terhubung Dengan Kami</h2>
         </div>
         <div class="col-12 social padding">
-            <a href="https://facebook.com/astrowin.jendraltempur"><i class="fab fa-facebook"></i></a>
+            <a href="https://facebook.com/andikafahrezi"><i class="fab fa-facebook"></i></a>
             <a href="https://x.com/Avalonn22"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:maiklenakram@gmail.com"><i class="fab fa-google-plus-g"></i></a>
-            <a href="https://instragram.com/andikafahrezzi"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/@NugrahaDarmawan"><i class="fab fa-youtube"></i></a>
+            <a href="https://instragram.com/andikafahrezzi"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:andikafahrezi5@gmail.com"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </div>
 </div>
