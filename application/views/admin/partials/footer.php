@@ -1,6 +1,6 @@
    
-    <footer class="section p-3 bg-dark text-white">
-        <div class="text-center">&copy;  Copyright kelompok 2.  <?php echo date("Y"); ?> All Rights Reserved</div>
+    <footer class="  text-center p-3 ">
+        <div class>&copy;  Copyright kelompok 6.  <?php echo date("Y"); ?> All Rights Reserved</div>
     </footer>
 </body>
 </html>

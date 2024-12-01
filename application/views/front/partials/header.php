@@ -11,6 +11,7 @@
     <script src="<?php echo base_url().'assets/js/bootstrap.min.js';?>"></script>
     <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
     <script src="https://kit.fontawesome.com/94214cb168.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<?php echo base_url().'assets/css/custom.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css'); ?>">
     <style>
     

@@ -7,3 +7,7 @@ Password: dika
 
 Username: aaaaa
 Password: 12345678
+
+TODO
+-  Mengubah tulisan status di role Admin
+- Mengubah jenis payment dan pada tampilan invoce terganti ( sesuai jenis payment yang kita pilih )
