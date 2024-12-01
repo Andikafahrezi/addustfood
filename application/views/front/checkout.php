@@ -60,22 +60,29 @@
                     <?php echo form_error('address'); ?>
                 </div>
                 <p class="lead mb-0">Metode Pembayaran</p>
-                <div class="container p-2 mb-3" style="background: #e5e5e5;">
-                <label for="cars">Pilih Metode Pembayaran :</label>
-                    <select id="cars">
-                        <option value="volvo">Dana</option>
-                        <option value="saab">Ovo</option>
-                        <option value="opel">Shopeepay</option>
-                        <option value="audi">COD</option>
+                <form method="post" action="<?php echo base_url('checkout/index'); ?>">
+                    <label for="payment_mode">Pilih Metode Pembayaran:</label>
+                    <select name="payment_mode" class="form-control">
+                        <option value="">Pilih Metode</option>
+                        <option value="cash">Cash</option>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
                     </select>
-                </div>
+                    <?php echo form_error('payment_mode'); ?>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
                 <div>
                     <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
                         Back to cart</a>
-                    <button type="submit" name="placeOrder" class="btn btn-success">Place Order <i
-                            class="fas fa-angle-right"></i></button>
+                    <button type="submit" name="placeOrder" class="btn btn-success">Place Order <i class="fas fa-angle-right"></i></button>
                 </div>
+                </form>
                 </from>
+               
+                
+
+               
         </div>
     </div>
 </div>

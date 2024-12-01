@@ -34,8 +34,8 @@
                             class="<?php echo (form_error('status') != "") ? 'is-invalid' : '';?>">
                             <option>Select Status</option>
                             <option value="in process">Dalam Proses</option>
-                            <option value="closed">Closed/Delivered</option>
-                            <option value="rejected">Rejected</option>
+                            <option value="closed">Telah Selesai</option>
+                            <option value="rejected">Di Tolak</option>
                         </select>
                         <?php echo form_error('status');?>
                     </td>

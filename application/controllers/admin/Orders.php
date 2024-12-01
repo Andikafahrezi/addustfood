@@ -66,4 +66,32 @@ class Orders extends CI_Controller {
         redirect(base_url().'admin/orders/index');
     }
 
+    public function insert_data()
+    {
+        // Validasi input
+        $this->form_validation->set_rules('payment_mode', 'Payment Mode', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            // Jika validasi gagal, kembali ke form dengan pesan error
+            $this->session->set_flashdata('error', 'Field payment mode wajib diisi.');
+            redirect(base_url('front/checkout'));
+        } else {
+            // Ambil data dari form
+            $payment_mode = $this->input->post('payment_mode');
+
+            // Data yang akan disimpan ke database
+            $data = [
+                'payment_mode' => $payment_mode,
+            ];
+
+            // Simpan ke database melalui model
+            if ($this->Your_model->insert_data($data)) {
+                $this->session->set_flashdata('success', 'Data berhasil disimpan!');
+            } else {
+                $this->session->set_flashdata('error', 'Gagal menyimpan data.');
+            }
+            redirect(base_url('front/checkout'));
+        }
+    }
+    
 }

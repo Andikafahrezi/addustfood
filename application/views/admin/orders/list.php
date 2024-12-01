@@ -47,7 +47,7 @@
                         <td> <button type="button" class="btn btn-secondary" style="font-weight:bold;"><i class="fas fa-bars"></i> Dikirim</button></td>
                         <?php } if($status=="in process") { ?>
                         <td> <button type="button" class="btn btn-warning"><span class="fa fa-cog fa-spin"
-                                    aria-hidden="true"></span> On the way!</button></td>
+                                    aria-hidden="true"></span> Dalam Perjalanan</button></td>
                         <?php } if($status=="closed") { ?>
                         <td> <button type="button" class="btn btn-success"><span class="fa fa-check-circle"aria-hidden="true"></span> Diterima</button>
                         </td> <?php } ?> <?php if($status=="rejected") { ?>
@@ -57,7 +57,7 @@
                         <td><?php echo $order['date']; ?></td>
                         <td>
                             <a href="<?php echo base_url().'admin/orders/processOrder/'.$order['o_id'];?>"
-                                class="btn btn-info mb-1">                               <i class="fas fa-arrow-alt-circle-right"></i> Process</a>
+                                class="btn btn-info mb-1">                               <i class="fas fa-arrow-alt-circle-right"></i> Proses</a>
                             <a href="<?php echo base_url().'admin/orders/deleteOrder/'.$order['o_id']?>"
                                 class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
                         </td>

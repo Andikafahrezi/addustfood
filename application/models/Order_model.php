@@ -62,7 +62,7 @@ class Order_model extends CI_Model {
 
     public function getAllOrders() {
         $this->db->order_by('o_id','DESC');
-        $this->db->select('o_id, d_name, quantity, price, status, date, username, address');
+        $this->db->select('o_id, d_name, quantity, price, status, date, username, address,payment_mode');
         $this->db->from('user_orders');
         $this->db->join('users', 'users.u_id = user_orders.u_id');
         $result = $this->db->get()->result_array();
@@ -70,11 +70,16 @@ class Order_model extends CI_Model {
     }
 
     public function getOrderByUser($id) {
-        $this->db->select('o_id, r_id, d_id, users.u_id, d_name, quantity, price, status, f_name, l_name, user_orders.date, users.email, users.phone,  success-date, username, address');
+        $this->db->select('o_id, r_id, d_id, users.u_id, d_name, quantity, price, status, f_name, l_name, user_orders.date, users.email, users.phone,  success-date, username, address, payment_mode');
         $this->db->from('user_orders');
         $this->db->join('users', 'users.u_id = user_orders.u_id');
         $this->db->where('o_id', $id);
         $result = $this->db->get()->row_array();
         return $result;
     }
+    public function insert_data($data)
+    {
+        return $this->db->insert('user_orders', $data); // 'user_order' adalah nama tabel
+    }
+    
 }

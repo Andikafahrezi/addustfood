@@ -1,0 +1,12 @@
+**Admin Login Details** 
+
+Username: dika
+Password: dika
+
+**Customer Login Details**
+
+Username: aaaaa
+Password: 12345678
+
+TODO
+- Change the payment type and the invoice display changes (according to the payment type we choose) { help i cant do this}

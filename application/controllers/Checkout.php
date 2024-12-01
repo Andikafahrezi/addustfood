@@ -24,11 +24,15 @@ class Checkout extends CI_Controller {
        $loggedUser = $this->session->userdata('user');
        $u_id = $loggedUser['user_id'];
        $user = $this->User_model->getUser($u_id);
+       $payment_mode = $this->input->post('payment_mode');
 
         if($this->cart->total_items() <= 0) {
             redirect(base_url().'restaurant');
         }
             $submit = $this->input->post('placeholder');
+            $orderData[$i]['payment_mode'] = $this->input->post('payment_mode'); // Ambil langsung dari form
+
+            
             $this->form_validation->set_error_delimiters('<p class="invalid-feedback">','</p>');
             $this->form_validation->set_rules('address', 'Address','trim|required');
 
@@ -63,6 +67,7 @@ class Checkout extends CI_Controller {
             $orderData[$i]['d_name'] = $item['name'];
             $orderData[$i]['quantity'] = $item['qty'];
             $orderData[$i]['price'] = $item['subtotal'];
+            $orderData[$i]['payment_mode'] = $item['payment_mode'];
             $orderData[$i]['date'] = date('Y-m-d H:i:s', now());
             $orderData[$i]['success-date'] = date('Y-m-d H:i:s', now());
             $i++;
@@ -77,5 +82,33 @@ class Checkout extends CI_Controller {
             }
         }   
     return false;
+    }
+
+    public function insert_data()
+    {
+        // Validasi input
+        $this->form_validation->set_rules('payment_mode', 'Payment Mode', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            // Jika validasi gagal, kembali ke form dengan pesan error
+            $this->session->set_flashdata('error', 'Field payment mode wajib diisi.');
+            redirect(base_url('front/checkout'));
+        } else {
+            // Ambil data dari form
+            $payment_mode = $this->input->post('payment_mode');
+
+            // Data yang akan disimpan ke database
+            $data = [
+                'payment_mode' => $payment_mode,
+            ];
+
+            // Simpan ke database melalui model
+            if ($this->Your_model->insert_data($data)) {
+                $this->session->set_flashdata('success', 'Data berhasil disimpan!');
+            } else {
+                $this->session->set_flashdata('error', 'Gagal menyimpan data.');
+            }
+            redirect(base_url('front/checkout'));
+        }
     }
 }
