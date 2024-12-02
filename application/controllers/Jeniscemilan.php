@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Restaurant extends CI_Controller {
+class Jeniscemilan extends CI_Controller {
 
 	public function index()
 	{
@@ -9,7 +9,7 @@ class Restaurant extends CI_Controller {
 		$stores= $this->Store_model->getResInfo();
 		$data['stores'] = $stores;
 		$this->load->view('front/partials/header');
-		$this->load->view('front/restaurant',$data);
+		$this->load->view('front/jeniscemilan',$data);
 		$this->load->view('front/partials/footer');
 	}
 

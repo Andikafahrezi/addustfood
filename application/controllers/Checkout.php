@@ -30,7 +30,7 @@ class Checkout extends CI_Controller {
             redirect(base_url().'restaurant');
         }
             $submit = $this->input->post('placeholder');
-            $orderData[$i]['payment_mode'] = $this->input->post('payment_mode'); // Ambil langsung dari form
+            // $orderData[$i]['payment_mode'] = $this->input->post('payment_mode'); // Ambil langsung dari form
 
             
             $this->form_validation->set_error_delimiters('<p class="invalid-feedback">','</p>');

@@ -10,8 +10,8 @@
             <div class="carousel-caption text-left">
                 <h1 class="display-2">> Lengkap untuk setiap selera!</h1>
                 <h3>addustfood siap melayanimu!</h3>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -19,8 +19,8 @@
             <div class="carousel-caption text-right">
                 <h1 class="display-2">> Satu tempat dengan berbagai macam rasa!</h1>
                 <h3>addustfood siap melayanimu</h3>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -28,8 +28,8 @@
             <div class="carousel-caption text-right">
             <h1 class="display-2">> Addustfood Siap Meladeni Ke BM-an Mu!</h1>
             <h3>Tunggu apa lagi? Pesan sekarang!</h3>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'restaurant/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
             </div>
         </div>
     </div>

@@ -34,7 +34,7 @@
                         <a class="nav-link" href="<?php echo base_url().'home/index';?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="<?php echo base_url().'restaurant/index';?>">Menu</a>
+                        <a class="nav-link active" href="<?php echo base_url().'jeniscemilan/index';?>">Menu</a>
                     </li>
                     <?php $user = $this->session->userdata('user'); 
                     if(empty($user)) {
