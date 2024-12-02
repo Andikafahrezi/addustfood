@@ -60,22 +60,23 @@
                     <?php echo form_error('address'); ?>
                 </div>
                 <p class="lead mb-0">Metode Pembayaran</p>
-                <form method="post" action="<?php echo base_url('checkout/index'); ?>">
-                    <label for="payment_mode">Pilih Metode Pembayaran:</label>
-                    <select name="payment_mode" class="form-control">
-                        <option value="">Pilih Metode</option>
-                        <option value="cash">Cash</option>
-                        <option value="credit_card">Credit Card</option>
-                        <option value="paypal">PayPal</option>
-                    </select>
-                    <?php echo form_error('payment_mode'); ?>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <form action="<?= base_url('checkout/process') ?>" method="post">
+                    <div class="form-group">
+                        <label for="payment_mode">Pilih Metode Pembayaran:</label>
+                        <select name="payment_mode" id="paymentmode"  class="form-control payment-mode"
+                                data-rowid="<?php echo $item['rowid']; ?>" 
+                                onChange="updatePaymentMode(this, '<?php echo $item['rowid']; ?>')">
+                            <option value="Cash" <?php echo ($item['payment_mode'] == 'Cash') ? 'selected' : ''; ?>>Cash</option>
+                            <option value="Credit Card" <?php echo ($item['payment_mode'] == 'Credit Card') ? 'selected' : ''; ?>>Credit Card</option>
+                            <option value="E-Wallet" <?php echo ($item['payment_mode'] == 'E-Wallet') ? 'selected' : ''; ?>>E-Wallet</option>
+                        </select>
 
-                <div>
-                    <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
+                    </div>
+                    <div>
+                        <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
                         Back to cart</a>
-                    <button type="submit" name="placeOrder" class="btn btn-success">Place Order <i class="fas fa-angle-right"></i></button>
+                        <button type="submit" name="placeOrder" class="btn btn-success">Place Order <i class="fas fa-angle-right"></i></button>
+                    </form>
                 </div>
                 </form>
                 </from>
@@ -86,3 +87,25 @@
         </div>
     </div>
 </div>
+
+<script>
+        function updatePaymentMode(el, rowId) {
+    var paymentMode = el.value; // Ambil nilai dari dropdown
+    $.ajax({
+        url: "<?php echo base_url('cart/updatePaymentMode'); ?>",
+        type: "POST",
+        data: {rowid: rowId, payment_mode: paymentMode},
+        success: function(response) {
+            if (response == 'ok') {
+                alert("Payment mode updated successfully!");
+            } else {
+                alert("Failed to update payment mode.");
+            }
+        },
+        error: function() {
+            alert("Error occurred while updating payment mode.");
+        }
+    });
+}
+
+    </script>

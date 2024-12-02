@@ -70,3 +70,4 @@ function updateCartItem(obj, rowid) {
         </table>
     </div>
 </div>
+

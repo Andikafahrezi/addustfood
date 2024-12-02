@@ -27,7 +27,7 @@ class Checkout extends CI_Controller {
        $payment_mode = $this->input->post('payment_mode');
 
         if($this->cart->total_items() <= 0) {
-            redirect(base_url().'restaurant');
+            redirect(base_url().'jeniscemilan');
         }
             $submit = $this->input->post('placeholder');
             // $orderData[$i]['payment_mode'] = $this->input->post('payment_mode'); // Ambil langsung dari form
@@ -35,13 +35,15 @@ class Checkout extends CI_Controller {
             
             $this->form_validation->set_error_delimiters('<p class="invalid-feedback">','</p>');
             $this->form_validation->set_rules('address', 'Address','trim|required');
+            $this->form_validation->set_rules('payment_mode', 'Metode Pembayaran', 'required');
 
             if($this->form_validation->run() == true) { 
                 $formArray['address'] = $this->input->post('address');
                 
                 //insert data into customer table and get last inserted custid
                 $this->User_model->update($u_id,$formArray);
-                $order = $this->placeOrder($u_id);
+                $order = $this->placeOrder($u_id, $payment_mode);
+                // $order = $this->placeOrder($u_id);
                 if($order) {
                     $this->session->set_flashdata('success_msg', 'Thank You! Your order has been placed successfully!');
                        redirect(base_url().'orders');
@@ -84,31 +86,22 @@ class Checkout extends CI_Controller {
     return false;
     }
 
-    public function insert_data()
-    {
-        // Validasi input
-        $this->form_validation->set_rules('payment_mode', 'Payment Mode', 'required');
+    public function process()
+{
+    $payment_mode = $this->input->post('payment_mode');
+    
+    // Data lain seperti ID user dan order
+    $data = [
+        'u_id' => $this->session->userdata('u_id'), // Contoh ID user
+        'o_id' => $this->generateOrderID(),
+        'payment_mode' => $payment_mode,
+    ];
 
-        if ($this->form_validation->run() == FALSE) {
-            // Jika validasi gagal, kembali ke form dengan pesan error
-            $this->session->set_flashdata('error', 'Field payment mode wajib diisi.');
-            redirect(base_url('front/checkout'));
-        } else {
-            // Ambil data dari form
-            $payment_mode = $this->input->post('payment_mode');
+    // Simpan ke database
+    $this->db->insert('user_orders', $data);
 
-            // Data yang akan disimpan ke database
-            $data = [
-                'payment_mode' => $payment_mode,
-            ];
+    // Redirect ke halaman invoice
+    redirect('front/invoice' . $data['o_id']);
+}
 
-            // Simpan ke database melalui model
-            if ($this->Your_model->insert_data($data)) {
-                $this->session->set_flashdata('success', 'Data berhasil disimpan!');
-            } else {
-                $this->session->set_flashdata('error', 'Gagal menyimpan data.');
-            }
-            redirect(base_url('front/checkout'));
-        }
-    }
 }

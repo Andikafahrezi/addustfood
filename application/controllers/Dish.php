@@ -33,6 +33,7 @@ class Dish extends CI_Controller {
             'qty'   =>1,
             'price' => $dishesh['price'],
             'name' => $dishesh['name'],
+            'payment_mode' => $dishesh['payment_mode'],
             'image' => $dishesh['img']
         );
         $this->cart->insert($data);
@@ -47,6 +48,7 @@ class Dish extends CI_Controller {
             'qty'   =>1,
             'price' => $dishesh['price'],
             'name' => $dishesh['name'],
+            'payment_mode' => $dishesh['payment_mode'],
             'image' => $dishesh['img']
         );
         $this->cart->insert($data);
@@ -59,6 +61,7 @@ class Dish extends CI_Controller {
             'qty'   =>1,
             'price' => $display['price'],
             'name' => $display['name'],
+            'payment_mode' => $dishesh['payment_mode'],
             'image' => $display['image']
         );
         $this->cart->insert($data);

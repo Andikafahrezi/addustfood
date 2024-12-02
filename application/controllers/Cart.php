@@ -47,5 +47,24 @@ class Cart extends CI_Controller {
 
         redirect(base_url().'cart');
     }
+    public function updatePaymentMode() {
+        $rowid = $this->input->post('rowid');
+        $payment_mode = $this->input->post('payment_mode');
+    
+        // Validasi data
+        if (!empty($rowid) && !empty($payment_mode)) {
+            $data = array(
+                'rowid' => $rowid,
+                'payment_mode' => $payment_mode
+            );
+    
+            // Update jenis pembayaran di cart
+            $this->cart->update($data);
+            echo 'ok';
+        } else {
+            echo 'err';
+        }
+    }
+    
 
 }
