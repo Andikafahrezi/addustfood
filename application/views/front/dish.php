@@ -32,8 +32,12 @@
                         <h4 class="text-muted"><b>Rp.<?php echo $dish['price']; ?></b></h4>
                     </div>
                     <p class="card-text"><?php echo $dish['about']; ?></p>
-                    <a href="<?php echo base_url().'Dish/addToCart/'.$dish['d_id']; ?>" class="btn btn-primary"><i
-                            class="fas fa-shopping-cart"></i> + Keranjang</a>
+                    <a href="<?php echo base_url().'Dish/addToCart/'.$dish['d_id']; ?>" 
+                    class="btn btn-primary <?php echo ($dish['r_id'] === "8") ? 'disabled' : ''; ?>" 
+                    <?php echo ($dish['r_id'] === "8") ? 'aria-disabled="true"' : ''; ?>>
+                    <i class="fas fa-shopping-cart"></i> + Keranjang
+                    </a>
+
                 </div>
             </div>
         </div>

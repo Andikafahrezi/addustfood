@@ -10,8 +10,8 @@
             <div class="carousel-caption text-left">
                 <h1 class="display-2">> Lengkap untuk setiap selera!</h1>
                 <h3>addustfood siap melayanimu!</h3>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">> Pesan sekarang</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">Lihat Menu</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -19,8 +19,8 @@
             <div class="carousel-caption text-right">
                 <h1 class="display-2">> Satu tempat dengan berbagai macam rasa!</h1>
                 <h3>addustfood siap melayanimu</h3>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">> Pesan sekarang</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">Lihat Menu</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -28,8 +28,8 @@
             <div class="carousel-caption text-right">
             <h1 class="display-2">> Addustfood Siap Meladeni Ke BM-an Mu!</h1>
             <h3>Tunggu apa lagi? Pesan sekarang!</h3>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">Order Now</a>
-                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">View Menu</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-outline-light btn-lg">> Pesan sekarang</a>
+                <a href="<?php echo base_url().'jeniscemilan/index'?>" class="btn btn-primary btn-lg">Lihat Menu</a>
             </div>
         </div>
     </div>
@@ -41,8 +41,7 @@
         </div>
         <hr>
         <div class="col-12">
-            <p class="lead">Basah, Kering, Ringan dan berat. Semua ada ditempat ini, Cara termudah untuk membeli makanan kesukaan Anda. Sistem Pemesanan Makanan menyediakan pengiriman segar
-                dan sedap!.  Jadi jangan menunggu dan mulai memesan sekarang juga!</p>
+            <p class="lead">Basah, Kering, Ringan dan berat. Semua ada ditempat ini, Cara termudah untuk membeli makanan kesukaan Anda. Sistem Pemesanan Makanan yang menyediakan pengiriman yang cepat. serta makanan yang segar dan sedap!.  Jadi jangan menunggu dan mulai memesan sekarang juga!</p>
         </div>
     </div>
 </div>

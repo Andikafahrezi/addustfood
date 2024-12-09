@@ -7,7 +7,7 @@
                 <div class="form-group">
                     <label class="control-label">Jenis Makanan</label>
                     <input type="text" name="res_name" id="rname" class="form-control
-                    <?php echo (form_error('res_name') != "") ? 'is-invalid' : '';?>" placeholder="Tambah Meja Reservasi"
+                    <?php echo (form_error('res_name') != "") ? 'is-invalid' : '';?>" placeholder="Tambah Jenis Makanan"
                     value="<?php echo set_value('res_name');?>">
 
                     <?php echo form_error('res_name'); ?>
@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="control-label">Contact</label>
                     <input type="number" name="phone" id="phone" class="form-control
-                    <?php echo (form_error('phone') != "") ? 'is-invalid' : '';?>" placeholder="1-(555)-555-5555"
+                    <?php echo (form_error('phone') != "") ? 'is-invalid' : '';?>" placeholder="0800000000"
                         value="<?php echo set_value('phone');?>">
                         <?php echo form_error('phone'); ?>
                     <span></span>
