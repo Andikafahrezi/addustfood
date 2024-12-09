@@ -22,7 +22,7 @@
                     <p class="card-text mb-0"></p>
                     
                     <hr>
-                    <a href="<?php echo base_url().'dish/list/'.$store['r_id']; ?>" class="btn btn-primary">View
+                    <a href="<?php echo base_url().'dish/list/'.$store['r_id']; ?>" class="btn btn-primary">Lihat
                         Menu</a>
                 </div>
             </div>

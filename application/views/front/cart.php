@@ -59,11 +59,11 @@ function updateCartItem(obj, rowid) {
             </tbody>
             <tfoot>
                 <tr>
-                    <td><a href="<?php echo base_url().'jeniscemilan' ?>" class="btn btn-sm btn-warning"><i class="fas fa-angle-left"></i> Continue Ordering</a></td>
+                    <td><a href="<?php echo base_url().'jeniscemilan' ?>" class="btn btn-sm btn-warning"><i class="fas fa-angle-left"></i> Lanjutkan Belanja</a></td>
                     <td colspan="3"></td>
                     <?php  if($this->cart->total_items() > 0) { ?>
                     <td class="text-left">Grand Total: <b><?php echo 'Rp.'.$this->cart->total();?></b></td>
-                    <td><a href="<?php echo base_url().'checkout';?>" class="btn btn-sm btn-success btn-block">Checkout <i class="fas fa-angle-right"></i></a></td>
+                    <td><a href="<?php echo base_url().'checkout';?>" class="btn btn-sm btn-success btn-block">Beli <i class="fas fa-angle-right"></i></a></td>
                     <?php } ?>
                 </tr>
             </tfoot>

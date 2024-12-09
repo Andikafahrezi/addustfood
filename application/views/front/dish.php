@@ -33,8 +33,7 @@
                     </div>
                     <p class="card-text"><?php echo $dish['about']; ?></p>
                     <a href="<?php echo base_url().'Dish/addToCart/'.$dish['d_id']; ?>" class="btn btn-primary"><i
-                            class="fas fa-shopping-cart"></i> Add to
-                        Cart</a>
+                            class="fas fa-shopping-cart"></i> + Keranjang</a>
                 </div>
             </div>
         </div>

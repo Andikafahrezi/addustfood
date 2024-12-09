@@ -75,7 +75,7 @@
                     <div>
                         <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
                         Back to cart</a>
-                        <button type="submit" name="placeOrder" class="btn btn-success">Place Order <i class="fas fa-angle-right"></i></button>
+                        <button type="submit" name="placeOrder" class="btn btn-success">Order <i class="fas fa-angle-right"></i></button>
                     </form>
                 </div>
                 </form>
@@ -97,7 +97,7 @@
         data: {rowid: rowId, payment_mode: paymentMode},
         success: function(response) {
             if (response == 'ok') {
-                alert("Payment mode updated successfully!");
+                alert("Payment berhasil di update!");
             } else {
                 alert("Failed to update payment mode.");
             }
