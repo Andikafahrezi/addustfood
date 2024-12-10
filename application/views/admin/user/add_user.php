@@ -2,7 +2,7 @@
 
     <form action="<?php echo base_url().'admin/user/create_user'; ?>" method="POST"
         class="form-container mx-auto shadow-container" style="width:80%" id="myForm">
-        <h3 class="mb-3 p-2 text-center">Add User's Information</h3>
+        <h3 class="mb-3 p-2 text-center">Add User Account</h3>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">

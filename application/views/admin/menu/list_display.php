@@ -12,7 +12,7 @@
         <?php endif ?>
         <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-                <h2>All Menu Details</h2>
+                <h2>Menu Populer</h2>
             </div>
             <input class="form-control mb-3" id="myInput" type="text" placeholder="Search .." style="width:50%;">
         </div>

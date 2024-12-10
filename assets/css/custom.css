@@ -1,5 +1,16 @@
+.tables {
+    background-color: blue; 
+    color: #fff; 
+    text-align: center;
+}
 footer {
     background-color: blue; 
     color: #fff; 
+    text-align: center;
+}
+
+.fot {
+    background-color: white; 
+    color: #030202; 
     text-align: center;
 }

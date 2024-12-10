@@ -9,17 +9,18 @@
     <script src="<?php echo base_url().'assets/js/jquery-3.6.0.min.js';?>"></script>
     <script src="<?php echo base_url().'assets/js/bootstrap.min.js';?>"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="<?php echo base_url().'assets/css/custom.css'; ?>">
     <link rel="stylesheet" href="<?php echo base_url();?>public/front/css/style.css">
 </head>
 
 <body>
-    <div class="container my-3" style="border: 2px outset green;">
+    <div class="container my-3" style="border: 2px outset blue;">
         <header class="mt-1 text-right">
         </header>
         <div class="invoice mb-3">
             <div class="row mb-3 p-3">
                 <div class="col-6">
-                    <h3 style="color:purple"><b>ADDUST FOOD</b></h3>
+                    <h3 style="color:blue"><b>ADDUST FOOD</b></h3>
                 </div>
                 <div class="col-6">
                     <p class="lead font-weight-bold mb-0"><?php echo $res['name'] ?></p>
@@ -45,7 +46,7 @@
                 <div class="col-12">
                 <hr>
                     <table class="table responsive">
-                        <thead class="bg-dark text-white">
+                        <thead class="tables">
                             <tr>
                                 <th>Jenis Makanan</th>
                                 <th>Nama Makanan</th>
@@ -71,7 +72,7 @@
             </div>
         </div>
         <hr class="my-4">
-        <footer class="text-center">
+        <footer class="fot">
             <p class="mb-0">Terima Kasih Atas Pesanan Anda dan Memilih Kami!</p>
             
             <p>Untuk syarat & ketentuan Silakan kunjungi www.addustfood.com</p>

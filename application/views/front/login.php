@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <link rel="icon" href="<?php echo base_url().'public/front/img/logo.png';?>">    
     <link rel="stylesheet" href="<?php echo base_url().'assets/css/bootstrap.min.css';?>">
     <script src="<?php echo base_url().'assets/js/jquery-3.6.0.min.js';?>"></script>
     <script src="<?php echo base_url().'assets/js/bootstrap.min.js';?>"></script>
@@ -46,8 +47,9 @@ no-repeat center center fixed; background-size: cover;
             </div>
             <?php echo form_error('password'); ?>
             <div class="py-3 pb-4 border-bottom">
-                <button type="submit" class="btn btn-success mr-3">Login</button>
-                <a href="<?php echo base_url().'singup/index' ?>" class="btn btn-danger">Register</a>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                
+                <p>Belum punya akun? <a href="<?php echo base_url().'singup/index' ?>">Daftar Disini!</a></p>
             </div>
             
         </form>
@@ -154,7 +156,7 @@ color:white;
 }
 </style>
 <div class="floatwa">
-<a href="https://api.whatsapp.com/send?phone=6281386607123&amp;text=Halo%20kak,%20Saya%20butuh%20bantuan" target="_blank"><div class="tombolwa">BUTUH BANTUAN ? CHAT CS DISINI</div></a></div>
+<a href="https://api.whatsapp.com/send?phone=6281386607123&amp;text=Halo%20kak,%20Saya%20butuh%20bantuan" target="_blank"><div class="tombolwa">BUTUH BANTUAN ? HUBUNGI CS KAMI DISINI !</div></a></div>
 </body>
 
 </html>
