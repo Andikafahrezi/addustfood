@@ -1,0 +1,14 @@
+**Change Route for database**
+ - go to folder application/config/database,
+ - change name database at line 81
+ - change url, db_addustfood to your database name example "db_example"
+
+**Admin Login** 
+
+Username: dika
+Password: dika
+
+**User Login**
+
+Username: user2
+Password: user1234

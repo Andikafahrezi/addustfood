@@ -1,9 +1,0 @@
-**Admin Login Details** 
-
-Username: admin
-Password: admin
-
-**Customer Login Details**
-
-Username: aaaaa
-Password: 12345678
