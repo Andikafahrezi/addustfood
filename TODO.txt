@@ -1,8 +1,5 @@
 TODO
 
-- Mengubah tabel invoice
-- mencoba menaruh payment di view cart, untuk memastikan setiap produk bisa memiliki data payment_modenya
-
 PR
 - Jika user membeli banyak produk, data payment_modenya hanya mendeteksi salah satu produknya
 - server harus terkonfigurasi SMTP atau sejenisnya, untuk mengirim data di bagian kontak kami
