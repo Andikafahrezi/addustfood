@@ -36,11 +36,11 @@
                 </div>
                 <div class="col-6">
                     <br><br>
-                    <p class="mb-0"><b>Order Number:</b> <?php echo "#".$order['o_id']; ?></p>
+                    <p class="mb-0"><b>Order Number : </b> <?php echo "#".$order['o_id']; ?></p>
                     <?php $cDate = strtotime($order['success-date']); ?>
-                    <p class="mb-0"><b>Order Date:</b> <?php echo date('d-M-Y',$cDate); ?></p>
+                    <p class="mb-0"><b>Order Date : </b> <?php echo date('d-M-Y',$cDate); ?></p>
                     <!-- <p class="mb-0"><b>Payment Mode:</b> Cash On Delivery</p> -->
-                    <p class="mb-0">payment : <?php echo $order['payment_mode']; ?></p>    
+                    <p class="mb-0"><b>Payment : </b><?php echo $order['payment_mode']; ?></p>    
                 </div>
                 
                 <div class="col-12">
