@@ -5,8 +5,12 @@
 
 **Admin Login** 
 
+Username: admin
+Password: admin
+
 Username: dika
 Password: dika
+
 
 **User Login**
 
