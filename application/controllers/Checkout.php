@@ -35,7 +35,7 @@ class Checkout extends CI_Controller {
             
             $this->form_validation->set_error_delimiters('<p class="invalid-feedback">','</p>');
             $this->form_validation->set_rules('address', 'Address','trim|required');
-            $this->form_validation->set_rules('payment_mode', 'Metode Pembayaran', 'required');
+            // $this->form_validation->set_rules('payment_mode', 'Metode Pembayaran', 'required');
 
             if($this->form_validation->run() == true) { 
                 $formArray['address'] = $this->input->post('address');
@@ -103,5 +103,19 @@ class Checkout extends CI_Controller {
     // Redirect ke halaman invoice
     redirect('front/invoice' . $data['o_id']);
 }
+public function ord($order_id)
+{
+    // Ambil data dari tabel user_order dengan kolom o_id
+    $order = $this->db->get_where('user_orders', ['o_id' => $order_id])->row();
 
+    if (!$order) {
+        show_error('Order tidak ditemukan!', 404);
+    }
+
+    $data = [
+        'order' => $order,
+    ];
+
+    $this->load->view('front/checkout', $data);
+}
 }

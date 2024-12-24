@@ -58,28 +58,13 @@
                         class="form-control
                     <?php echo (form_error('address') != "") ? 'is-invalid' : '';?>"><?php echo set_value('address', $user['address']);?></textarea>
                     <?php echo form_error('address'); ?>
+                    <p class="mb-0"><b>Payment : </b><?php echo $item['payment_mode']; ?></p>    
+                    <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
+                    Back to cart</a>
+                    <button type="submit" name="placeOrder" class="btn btn-success">Order <i class="fas fa-angle-right"></i></button>
                 </div>
-                <p class="lead mb-0">Metode Pembayaran</p>
-                <form action="<?= base_url('checkout/process') ?>" method="post">
-                    <div class="form-group">
-                        <label for="payment_mode">Pilih Metode Pembayaran:</label>
-                        <select name="payment_mode" id="paymentmode"  class="form-control payment-mode"
-                                data-rowid="<?php echo $item['rowid']; ?>" 
-                                onChange="updatePaymentMode(this, '<?php echo $item['rowid']; ?>')">
-                            <option value="Cash" <?php echo ($item['payment_mode'] == 'Cash') ? 'selected' : ''; ?>>Cash</option>
-                            <option value="Credit Card" <?php echo ($item['payment_mode'] == 'Credit Card') ? 'selected' : ''; ?>>Credit Card</option>
-                            <option value="E-Wallet" <?php echo ($item['payment_mode'] == 'E-Wallet') ? 'selected' : ''; ?>>E-Wallet</option>
-                        </select>
-
-                    </div>
-                    <div>
-                        <a href="<?php echo base_url().'cart'; ?>" class="btn btn-warning"><i class="fas fa-angle-left"></i>
-                        Back to cart</a>
-                        <button type="submit" name="placeOrder" class="btn btn-success">Order <i class="fas fa-angle-right"></i></button>
-                    </form>
-                </div>
-                </form>
-                </from>
+            </form>
+               
                
                 
 
@@ -88,24 +73,3 @@
     </div>
 </div>
 
-<script>
-        function updatePaymentMode(el, rowId) {
-    var paymentMode = el.value; // Ambil nilai dari dropdown
-    $.ajax({
-        url: "<?php echo base_url('cart/updatePaymentMode'); ?>",
-        type: "POST",
-        data: {rowid: rowId, payment_mode: paymentMode},
-        success: function(response) {
-            if (response == 'ok') {
-                alert("Payment berhasil di update!");
-            } else {
-                alert("Failed to update payment mode.");
-            }
-        },
-        error: function() {
-            alert("Error occurred while updating payment mode.");
-        }
-    });
-}
-
-    </script>

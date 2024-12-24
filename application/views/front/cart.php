@@ -59,6 +59,17 @@ function updateCartItem(obj, rowid) {
             </tbody>
             <tfoot>
                 <tr>
+                    <td colspan="4"></td>
+                    <td>Jenis Pembayaran</td>
+                    <td><select name="payment_mode" id="paymentmode"  class="form-control payment-mode"
+                                data-rowid="<?php echo $item['rowid']; ?>" 
+                                onChange="updatePaymentMode(this, '<?php echo $item['rowid']; ?>')">
+                            <option value="Cash" <?php echo ($item['payment_mode'] == 'Cash') ? 'selected' : ''; ?>>Cash</option>
+                            <option value="Credit Card" <?php echo ($item['payment_mode'] == 'Credit Card') ? 'selected' : ''; ?>>Credit Card</option>
+                            <option value="E-Wallet" <?php echo ($item['payment_mode'] == 'E-Wallet') ? 'selected' : ''; ?>>E-Wallet</option>
+                        </select></td>
+                </tr>
+                <tr>
                     <td><a href="<?php echo base_url().'jeniscemilan' ?>" class="btn btn-sm btn-warning"><i class="fas fa-angle-left"></i> Lanjutkan Belanja</a></td>
                     <td colspan="3"></td>
                     <?php  if($this->cart->total_items() > 0) { ?>
@@ -70,4 +81,26 @@ function updateCartItem(obj, rowid) {
         </table>
     </div>
 </div>
+
+<script>
+        function updatePaymentMode(el, rowId) {
+    var paymentMode = el.value; // Ambil nilai dari dropdown
+    $.ajax({
+        url: "<?php echo base_url('cart/updatePaymentMode'); ?>",
+        type: "POST",
+        data: {rowid: rowId, payment_mode: paymentMode},
+        success: function(response) {
+            if (response == 'ok') {
+                alert("Payment berhasil di update!");
+            } else {
+                alert("Failed to update payment mode.");
+            }
+        },
+        error: function() {
+            alert("Error occurred while updating payment mode.");
+        }
+    });
+}
+
+    </script>
 
