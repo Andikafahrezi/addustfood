@@ -79,4 +79,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ---
 
-If you have any questions, feel free to contact [andikafahrezi5@gmail.com](mailto:andikafahrezi5@gmail.com).
+If you have any questions, feel free to contact [@andikafahrezzi](https://www.instagram.com/andikafahrezzi).
