@@ -1,5 +1,5 @@
 # README: E-Commerce Website Project
-
+![alt text](image.png)
 ## Project Description
 This project is a web-based e-commerce application built using **PHP** with the **CodeIgniter** framework. The application is designed to facilitate users in making online purchases and provide an easy management experience for admins through a dedicated dashboard.
 
